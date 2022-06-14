@@ -1,10 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { useState } from "react";
 
 export default function Navbar() {
-  const [link, setLink] = useState(true);
-
   return (
     <header>
       <nav>
@@ -14,7 +11,7 @@ export default function Navbar() {
 
         <ul>
           <li>
-            <Link className={link ? "link" : "link2"} to="/speisekarte">
+            <Link className="link" to="/speisekarte">
               Speisekarte
             </Link>
           </li>
